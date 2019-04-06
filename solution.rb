@@ -1,14 +1,10 @@
 require 'sinatra'
 
-  get '/' do
-
+get '/' do
 
   permiso = request.env["HTTP_PERMISO"]
 
-  env["HTTP_PERMISO"]
-
-
-  if permiso=="permiso: soy-un-token-secreto"
+  if permiso == "soy-un-token-secreto"
 
   "Si lo logramos!"
 
