@@ -1,6 +1,6 @@
 require 'sinatra'
 
-get '/' do
+  get '/' do
 
   permiso = request.env["HTTP_PERMISO"]
 
@@ -10,10 +10,8 @@ get '/' do
 
   else
 
-    "Sin permiso"
+    "Sin Permiso"
 
   end
-
-
 
 end
